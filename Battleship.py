@@ -6,7 +6,7 @@ if players != "2"  and players != "2" :
         players = input("Select between 1 or 2 players: ")
 
 print("1) Easy Mode")
-print("2) Medium Mode")
+print("2) Normal Mode")
 print("3) Hard Mode")
 
 mode = input("Select a diffculty mode from the following above: ")
