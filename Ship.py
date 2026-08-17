@@ -1,8 +1,9 @@
 class Ship:
 
-    def __init__(self, length, orient):
+    def __init__(self, orient, length):
      self.length = length
      self.orient = orient
+     self.coordlist = [length]
 
     def getLength(self):
         return self.length
