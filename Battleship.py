@@ -1,4 +1,6 @@
 import random
+import Ship
+import Coord
 print("Battleship!!!")
 
 players = input("Select between 1 or 2 players: ")
@@ -34,33 +36,22 @@ if players == "1":
     for row in board:
         print(" ".join(row))
 
-    ms = False
-    while ms == False:
-        s1len = 2
-        ran = random.randint(0,1)
-        if ran == 0:
-             orient = 'H'
-        else:
-            orient = 'V'
-
-        ranx = random.randint(0,length-1)
-        rany = random.randint(0,length-1)
+    Ship1 = Ship(3, boardships)
+    boardships = Ship.setBoard(boardships)
+    Ship2 = Ship(3, boardships)
+    boardships = Ship.setBoard(boardships)
+    for row in boardships:
+        print(" ".join(row))
+    
         
     
     
     
 
-def shipMake(ship, boardships):
-    {
-        ms = False
-        while ms == False:
-           
-            ran = random.randint(0,1)
-            if ran == 0:
-                orient = 'H'
-            else:
-                orient = 'V'
+
+
+                    
+                               
+
+
     
-            ranx = random.randint(0,length-1)
-            rany = random.randint(0,length-1)
-    }
