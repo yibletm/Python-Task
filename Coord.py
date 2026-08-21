@@ -4,11 +4,11 @@ class Coord:
         self.x = x
         self.y = y
 
-        def getX():
-            return x
+    def getX(self):
+        return self.x
 
-        def getY():
-            return y
+    def getY(self):
+        return self.y
 
 
         

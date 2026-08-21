@@ -1,6 +1,6 @@
 import random
-import Ship
-import Coord
+from Ship import Ship
+from Coord import Coord
 print("Battleship!!!")
 
 players = input("Select between 1 or 2 players: ")
@@ -36,9 +36,10 @@ if players == "1":
     for row in board:
         print(" ".join(row))
 
-    Ship1 = Ship(3, boardships)
+
+    Ship1 = Ship(3, length, boardships)
     boardships = Ship1.setBoard(boardships)
-    Ship2 = Ship(3, boardships)
+    Ship2 = Ship(3, length, boardships)
     boardships = Ship2.setBoard(boardships)
     for row in boardships:
         print(" ".join(row))
