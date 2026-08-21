@@ -37,9 +37,9 @@ if players == "1":
         print(" ".join(row))
 
     Ship1 = Ship(3, boardships)
-    boardships = Ship.setBoard(boardships)
+    boardships = Ship1.setBoard(boardships)
     Ship2 = Ship(3, boardships)
-    boardships = Ship.setBoard(boardships)
+    boardships = Ship2.setBoard(boardships)
     for row in boardships:
         print(" ".join(row))
     
